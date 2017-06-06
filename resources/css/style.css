@@ -1,8 +1,201 @@
+/**************************************
+BASE STYLE
+**************************************/
+
 * {
-  content-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  display: inline-block;
+}
+
+/**************************************
+LAYOUT
+**************************************/
+
+.primary {
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+}
+
+.primary img,
+.primary video {
+  width: 100%;
+}
+
+.secondary {
+  width: 40%;
+  padding-top: 16px;
+  /*align-items: flex-start;*/
+}
+
+#info,
+#thesis .container {
+  align-items: flex-start;
+}
+
+.secondary-img {
+  width: 35%;
+  padding: 16px;
+}
+
+.secondary-img img {
+  width: 100%;
+}
+
+.secondary-content a {
+  color: blue;
+}
+
+/*.secondary .container {
+  align-items: center;
+}*/
+
+
+/**************************************
+HEADING TAGS
+**************************************/
+
+h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 2rem;
+}
+
+/**************************************
+HEADER
+**************************************/
+
+header {
+  justify-content: space-between;
+  /*align-items: center;*/
+  height: 64px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
 }
 
 .logo {
+  margin-left: 24px;
   display: flex;
   align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+/**************************************
+BANNER
+**************************************/
+
+#banner {
+  background-color: #d8d8d8;
+  padding-top: 64px;
+  align-items: center;
+}
+
+.banner-img {
+  width: 60%;
+}
+
+.banner-img img {
+  width: 100%;
+  padding: 32px 40px 32px 24px;
+}
+
+.banner-content {
+  width: 30%;
+  font-size: 1.5rem;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.button a {
+  background-color: #4a4a4a;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.button a:hover {
+  color: #4a4a4a;
+  background: #ffffff
+}
+
+
+/**************************************
+INFORMATION
+**************************************/
+
+#info h2 {
+  text-align: left;
+}
+
+/**************************************
+COURSES
+**************************************/
+
+#courses {
+  background-color: #d8d8d8;
+}
+
+
+
+#courses .container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.courses-content {
+  width: 30%;
+  padding-right: 32px;
+}
+
+.courses-content img {
+  width: 100%;
+}
+
+/**************************************
+THESIS
+**************************************/
+
+
+/**************************************
+FOOTER
+**************************************/
+
+
+footer {
+  justify-content: space-between;
 }
