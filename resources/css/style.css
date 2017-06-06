@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  color: #4a4a4a;
 }
 
 .container {
@@ -49,7 +50,6 @@ LAYOUT
 .secondary {
   width: 40%;
   padding-top: 16px;
-  /*align-items: flex-start;*/
 }
 
 #info,
@@ -57,27 +57,28 @@ LAYOUT
   align-items: flex-start;
 }
 
-.secondary-img {
+.secondary .container img {
   width: 35%;
   padding: 16px;
-}
-
-.secondary-img img {
-  width: 100%;
 }
 
 .secondary-content a {
   color: blue;
 }
 
-/*.secondary .container {
-  align-items: center;
-}*/
+.highlight {
+  background-color: #d8d8d8;
+}
 
 
 /**************************************
 HEADING TAGS
 **************************************/
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
 
 h2 {
   width: 100%;
@@ -85,6 +86,17 @@ h2 {
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 8px;
+  padding-top: 24px;
+}
+
+h4 {
+  font-weight: normal;
 }
 
 /**************************************
@@ -93,7 +105,6 @@ HEADER
 
 header {
   justify-content: space-between;
-  /*align-items: center;*/
   height: 64px;
   position: fixed;
   background-color: white;
@@ -104,7 +115,6 @@ header {
 .logo {
   margin-left: 24px;
   display: flex;
-  align-items: center;
 }
 
 nav li {
@@ -122,23 +132,13 @@ BANNER
   align-items: center;
 }
 
-.banner-img {
-  width: 60%;
-}
-
-.banner-img img {
-  width: 100%;
-  padding: 32px 40px 32px 24px;
+#banner .primary {
+  padding-right: 40px;
 }
 
 .banner-content {
   width: 30%;
   font-size: 1.5rem;
-}
-
-.banner-content h1 {
-  font-size: 3rem;
-  margin: 0;
 }
 
 .button a {
@@ -160,6 +160,11 @@ INFORMATION
 
 #info h2 {
   text-align: left;
+  padding-bottom: 24px;
+}
+
+#info .primary {
+  border-right: 1px solid #E0E2E2;
 }
 
 /**************************************
@@ -168,9 +173,8 @@ COURSES
 
 #courses {
   background-color: #d8d8d8;
+  padding-bottom: 32px;
 }
-
-
 
 #courses .container {
   justify-content: center;
@@ -178,24 +182,47 @@ COURSES
 }
 
 .courses-content {
-  width: 30%;
-  padding-right: 32px;
+  width: 25%;
+  margin: 16px 16px;
+  height: 400px;
+  max-height: 400px;
+  background-color: white;
+}
+
+.courses-info {
+  padding: 16px;
 }
 
 .courses-content img {
   width: 100%;
 }
 
+.courses-info h3 {
+  padding-top: 0;
+}
+
 /**************************************
 THESIS
 **************************************/
 
+#thesis .secondary .container {
+  align-items: center;
+}
+
+#thesis .highlight {
+  margin-top: 16px;
+}
 
 /**************************************
 FOOTER
 **************************************/
 
-
 footer {
   justify-content: space-between;
+  border-top: 1px solid #E0E2E2;
+  height: 100px;
+}
+
+.footer-content {
+  margin: 0 24px;
 }
